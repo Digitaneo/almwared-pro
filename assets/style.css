@@ -78,7 +78,7 @@ section[id]{scroll-margin-top:90px}
 .about-copy p{margin:0 0 10px;color:#475569}
 .about-cta-row{margin-top:16px}
 .about-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.stat-card{padding:18px;border-radius:16px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:10px;transition:transform .25s ease, box-shadow .25s ease;min-height:140px;position:relative}
+.stat-card{padding:18px;border-radius:16px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:10px;transition:transform .25s ease, box-shadow .25s ease;position:relative}
 .stat-card:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(15,43,69,.08)}
 .stat-content{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;gap:3px;align-items:center;flex:1;min-width:0}
 .stat-icon{width:70px;height:70px;object-fit:contain;border-radius:16px;padding:8px;background:linear-gradient(135deg,#eaf4ff,#dbeafe);flex-shrink:0}
