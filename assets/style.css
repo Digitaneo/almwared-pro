@@ -50,7 +50,7 @@ section[id]{scroll-margin-top:90px}
 .hero p{margin:0 0 16px;color:#445267}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:8px}
 .hero-slider-shell{display:flex;flex-direction:column;gap:12px}
-.hero-slider{position:relative;overflow:hidden;border-radius:24px;background:#eef5fb;height:250px}
+.hero-slider{position:relative;overflow:hidden;border-radius:24px;background:#eef5fb;height:auto}
 .hero-slide{display:none;position:relative;width:100%;height:100%}
 .hero-slide.active{display:block;animation:fade-slide .7s ease}
 .hero-slide img{width:100%;height:100%;object-fit:cover;display:block;object-position:center}
@@ -100,7 +100,8 @@ section[id]{scroll-margin-top:90px}
 .product-modal__nav.prev{left:30px}
 .product-modal__nav.next{right:30px}
 .product-modal__content{padding:28px 28px 30px;display:flex;flex-direction:column;gap:14px;justify-content:flex-start}
-.product-modal__close{position:absolute;top:14px;right:14px;border:0;background:#fff;border-radius:50%;width:44px;height:44px;font-size:1.4rem;cursor:pointer;box-shadow:0 8px 16px rgba(15,43,69,.12)}
+.product-modal__close{position:absolute;z-index:3;top:14px;right:14px;display:inline-flex;align-items:center;justify-content:center;border:0;background:#fff;border-radius:50%;width:44px;height:44px;color:var(--navy);font-size:1.7rem;line-height:1;cursor:pointer;box-shadow:0 8px 16px rgba(15,43,69,.18)}
+.product-modal__close:hover{background:var(--navy);color:#fff}
 .product-modal__content h3{margin:0;color:var(--navy);font-size:1.5rem;line-height:1.4}
 .product-modal__content p{margin:0;color:#475569;line-height:1.9;font-size:1rem}
 .product-modal__wa{align-self:flex-start;margin-top:6px}
@@ -330,8 +331,6 @@ body.modal-open{overflow:hidden}
   .about-stats{grid-template-columns:1fr 1fr}
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hero{padding:28px 0 20px}
-  .hero-slider{min-height:200px}
-  .hero-slide{min-height:200px}
   .project-showcase{grid-template-columns:1fr}
   .project-showcase__content{padding:24px}
   .trust-cards{grid-template-columns:1fr}
@@ -357,8 +356,6 @@ body.modal-open{overflow:hidden}
   .hamburger{display:inline-block}
   .hero{padding:22px 0 18px}
   .hero h1{font-size:1.8rem}
-  .hero-slider{min-height:260px}
-  .hero-slide{min-height:260px}
   .slide-info{max-width:85%;font-size:.95rem}
   .about-panel{padding:20px}
   .about-stats{grid-template-columns:1fr}
