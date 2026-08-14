@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function(){
     card.setAttribute('tabindex', '0');
     card.addEventListener('click', (event)=>{
       if(event.target.closest('a')){
-        event.preventDefault();
+        return;
       }
       openProductModal(card.id);
     });

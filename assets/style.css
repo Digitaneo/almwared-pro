@@ -91,6 +91,8 @@ section[id]{scroll-margin-top:90px}
 .product-card img{width:100%;height:auto;object-fit:cover;border-radius:12px;margin-bottom:4px}
 .product-card p{margin:0;color:#4b5563}
 .product-benefit{font-weight:700;color:var(--accent)}
+.product-card .btn{width:90%;justify-content:center;align-self:center;margin-top:auto;text-align:center;background:var(--accent);color:#fff;border:1px solid var(--accent);box-shadow:0 6px 14px rgba(42,111,182,.1)}
+.product-card .btn:hover{background:#ff7f00;border-color:#ff7f00;color:#fff;box-shadow:0 10px 20px rgba(255,127,0,.28)}
 .product-modal{position:fixed;inset:0;z-index:120;background:rgba(2,8,23,.78);display:flex;align-items:center;justify-content:center;padding:18px;opacity:0;pointer-events:none;transition:opacity .25s ease}
 .product-modal.open{opacity:1;pointer-events:auto}
 .product-modal__dialog{position:relative;width:min(1160px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:28px;box-shadow:0 24px 70px rgba(2,8,23,.28);display:flex;flex-direction:column;gap:0}
@@ -291,8 +293,9 @@ body.modal-open{overflow:hidden}
 .info-modal__content{color:#4b6175;line-height:1.95}.info-modal__content p{margin:0 0 14px}.info-modal__content h3{margin:24px 0 8px;color:var(--navy);font-size:1.05rem}.info-modal__content ul{margin:0;padding-right:20px}.info-modal__content li{margin-bottom:7px}
 .info-modal__cta{margin-top:12px}
 .floating-ctas{position:fixed;left:16px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:80}
-.fab{display:inline-flex;width:56px;height:56px;border-radius:16px;align-items:center;justify-content:center;text-decoration:none;color:#fff;background:var(--navy);box-shadow:0 12px 24px rgba(10,20,34,.2);animation:pulse-float 2.2s ease-in-out infinite}
+.fab{position:relative;display:inline-flex;width:56px;height:56px;border-radius:16px;align-items:center;justify-content:center;text-decoration:none;color:#fff;background:var(--navy);box-shadow:0 0 0 0 rgba(42,111,182,.55),0 12px 24px rgba(10,20,34,.2);animation:pulse-float 2.2s ease-in-out infinite,contact-glow 2.4s ease-in-out infinite}
 .fab.wa{background:#25D366}
+.fab.wa{animation-name:pulse-float,whatsapp-glow}
 .fab svg{width:24px;height:24px}
 .accordion{display:grid;gap:10px}
 .accordion .accordion-item{width:100%;display:flex;align-items:center;justify-content:space-between;text-align:right;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:14px;color:var(--navy);font-weight:700;cursor:pointer}
@@ -381,4 +384,14 @@ body.modal-open{overflow:hidden}
 #faq, 
 #faq * {
   font-family: 'Cairo', sans-serif;
+}
+
+
+@keyframes contact-glow{
+  0%,100%{box-shadow:0 0 0 0 rgba(42,111,182,.5),0 12px 24px rgba(10,20,34,.2)}
+  50%{box-shadow:0 0 0 9px rgba(42,111,182,0),0 12px 24px rgba(10,20,34,.2)}
+}
+@keyframes whatsapp-glow{
+  0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 12px 24px rgba(10,20,34,.2)}
+  50%{box-shadow:0 0 0 9px rgba(37,211,102,0),0 12px 24px rgba(10,20,34,.2)}
 }
